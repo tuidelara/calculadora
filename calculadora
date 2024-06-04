@@ -1,0 +1,30 @@
+public class Calculadora {
+    public static void main(String[] args) {
+        System.out.println("Calculadora Inicializada");
+    }
+
+    public int somar(int a, int b) {
+        return a + b;
+    }
+     
+    public int subtrair(int a, int b){
+        return a - b;
+    }
+    
+    public int multiplicar(int a, int b){
+        return a * b;
+    }
+
+    public int dividir(int a, int b){
+        if(b == 0){
+           throm nem IllegalArgumentException("Divisão por zero não é permitido");
+        }
+        return a / b;
+    }
+    public static void main(String[] args) {
+        System.out.println("Soma: " + somar(10, 5));
+        System.out.println("Subtração: " + subtrair(10, 5));
+        System.out.println("Multiplicação: " + multiplicar(10, 5));
+        System.out.println("Divisão: " + dividir(10, 5));
+    }
+}
